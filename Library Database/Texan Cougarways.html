@@ -1,0 +1,53 @@
+<DOCTYPE! html>
+	<html>
+		<head>
+			<title>
+				Texan Cougarways
+			</title>
+			<link rel="stylesheet" href="homepage.css">
+		</head>
+		<body>
+			<header>
+				<h1> Texan Cougarways Library Branch </h1>
+				<nav id = "navbar">
+					<ul id = "navbar-list">
+						<li class = "navli"> <a href = "AboutUS.html"> About Us </a></li>
+						<li class = "navli"> <a href = "Login_Page.html"> User Login </a></li>
+						<li class = "navli"> <a href = "Library_Events.html"> Library Events </a></li>
+						<li class = "navli"> <a href = "Request_StudyRoom.html"> Request Study Room </a></li>
+						<li class = "navli"> <a href = "Request_Item.html"> Request Item </a></li>
+						<li class = "navli"> <a href = "Library_Catalog.html"> Library Catalog </a></li>
+						<li class = "navli"> <a href = "Texan Cougarways.html"> Home </a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+			<div class="weatherWidget" > </div>
+				<script>
+					window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+					window.weatherWidgetConfig.push(
+						{
+						selector:".weatherWidget",
+						apiKey:"3EBA2W6863T2RHJBQWXXR677Q", //Sign up for your personal key
+						location: "Houston, TX", 
+						unitGroup: "metric",
+						forecastDays: 1,
+						title: "Current Weather",
+						showTitle:true, 
+						showConditions:true
+						}
+					);
+
+					(function() {
+						var d = document, s = d.createElement('script');
+						s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+			</main>
+			<footer>
+				<p id = "copyrightinfo"> © 2021-2022 Houston Team 16 </p>
+			</footer>
+		</body>
+	</html>

@@ -1,0 +1,111 @@
+body {
+	margin: 0px;
+	overflow-x: hidden;
+	color: white;
+}
+header {
+	background-color: #141414;
+	width: 100vw;
+	padding-bottom: 0px;
+	padding-top: 3px;
+	display: flex;
+}
+main {
+	background-image: url("Images/backgroundblur.jpg");
+	background-size: cover;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"item1 item2 item3 item4 item5"
+		"item6 item7 item8 item9 item10"
+		"item11 item12 item13 item14 item15"
+		"item16 item17 item18 item19 item20";
+	align-items: center;
+	justify-items: center;
+}
+h1 {
+	width: 40%;
+	margin: 0px;
+	padding-left: 20px;
+}
+p {
+	margin: 0px;
+}
+#navbar {
+	width: 60%;
+}
+#navbar-list {
+	list-style-type: none;
+	overflow-x: hidden;
+	padding: 0px;
+	margin-right: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.navli {
+	float: right;
+}
+.navli a {
+	display: block;
+	text-align: center;
+	padding: 14px 25px;
+	color: white;
+	text-decoration: none;
+}
+.navli a:hover {
+	color: #5E5E5E;
+}
+.navli::after {
+	content: "";
+	display: block;
+	transition: transform 0.4s;
+	width: 100%;
+	height: 2px;
+	background-color: #4E4E4E;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+}
+.navli:hover::after {
+	background-color: #4E4E4E;
+	color: #4E4E4E;
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+.item-container {
+	width: 80%;
+	height: 80%;
+	/* border: 3px solid red;
+	border-radius: 10px; */
+}
+.item-image {
+	height: 80%;
+	width: 100%;
+	border-radius: 10px;
+	border: 3px solid red;
+	border-radius: 10px 10px 0px 0px;
+}
+.item-information-strip {
+	border-color: red;
+	border-style: solid;
+	border-width: 0px 3px 3px 3px;
+	border-radius: 0px 0px 10px 10px;
+	display: flex;
+	text-align: center;
+	margin: 0px;
+	height: 20%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.item-information-strip:hover {
+	background-color: red;
+}
+footer {
+	background-color: #141414;
+	margin: 0px;
+}
+#copyrightinfo {
+	margin: 0px;
+}

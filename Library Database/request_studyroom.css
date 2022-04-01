@@ -1,0 +1,169 @@
+body {
+	margin: 0px;
+	overflow-x: hidden;
+	color: white;
+}
+header {
+	background-color: #141414;
+	width: 100vw;
+	padding-bottom: 0px;
+	padding-top: 3px;
+	display: flex;
+}
+main {
+	background-image: url("Images/background.jpg");
+	background-size: cover;
+	height: 100%;
+	overflow-y: auto; 
+}
+h1 {
+	width: 40%;
+	margin: 0px;
+	padding-left: 20px;
+}
+#navbar {
+	width: 60%;
+}
+#navbar-list {
+	list-style-type: none;
+	overflow-x: hidden;
+	padding: 0px;
+	margin-right: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.navli {
+	float: right;
+}
+.navli a {
+	display: block;
+	text-align: center;
+	padding: 14px 25px;
+	color: white;
+	text-decoration: none;
+}
+.navli a:hover {
+	color: #5E5E5E;
+}
+.navli::after {
+	content: "";
+	display: block;
+	transition: transform 0.4s;
+	width: 100%;
+	height: 2px;
+	background-color: #4E4E4E;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+}
+.navli:hover::after {
+	background-color: #4E4E4E;
+	color: #4E4E4E;
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+.studyroom {
+	height: 20%;
+	display: flex;
+}
+
+/* Box Distinctions and Study Room Info */
+#boxdistinction1 {
+	width: 30%;
+	background-image: url("Images/StripesImages/stripes4r.png");
+	background-size: cover;
+	border: 3px solid #E71D36;
+}
+#study-room-info1 {
+	width: 70%;
+	background-color: #E71D36;
+	display: flex;
+	color: white;
+}
+#boxdistinction2 {
+	width: 30%;
+	background-image: url("Images/StripesImages/stripes5r.png");
+	background-size: cover;
+	border: 3px solid #AE1C33;
+}
+#study-room-info2 {
+	width: 70%;
+	background-color: #AE1C33;
+	display: flex;
+	color: white;
+}
+#boxdistinction3 {
+	width: 30%;
+	background-image: url("Images/StripesImages/stripes6r.png");
+	background-size: cover;
+	border: 3px solid #911B31;
+}
+#study-room-info3 {
+	width: 70%;
+	background-color: #911B31;
+	display: flex;
+	color: white;
+}
+#boxdistinction4 {
+	width: 30%;
+	background-image: url("Images/StripesImages/stripes7r.png");
+	background-size: cover;
+	border: 3px solid #741A2F;
+}
+#study-room-info4 {
+	width: 70%;
+	background-color: #741A2F;
+	display: flex;
+	color: white;
+}
+#boxdistinction5 {
+	width: 30%;
+	background-image: url("Images/StripesImages/stripes8r.png");
+	background-size: cover;
+	border: 3px solid #58192D;
+}
+#study-room-info5 {
+	width: 70%;
+	background-color: #58192D;
+	display: flex;
+	color: white;
+}
+#boxdistinction6 {
+	width: 30%;
+	background-image: url("Images/StripesImages/stripes9r.png");
+	background-size: cover;
+	border: 3px solid #3B182B;
+}
+#study-room-info6 {
+	width: 70%;
+	background-color: #3B182B;
+	display: flex;
+	color: white;
+}
+#boxdistinction7 {
+	width: 30%;
+	background-image: url("Images/StripesImages/stripes10r.png");
+	background-size: cover;
+	border: 3px solid #011627;
+}
+#study-room-info7 {
+	width: 70%;
+	background-color: #011627;
+	display: flex;
+	color: white;
+}
+/* Box Distinctions and Study Room Info */
+.info {
+	padding: 10px;
+}
+.item-image {
+	height: 100%;
+	width: 20%;
+}
+footer {
+	background-color: #141414;
+	margin: 0px;
+}
+
+#copyrightinfo {
+	margin: 0px;
+}
