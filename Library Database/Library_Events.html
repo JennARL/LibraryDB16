@@ -1,0 +1,74 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>
+        Texan Cougarways
+      </title>
+	  <link rel="stylesheet" href="Library_Events.css">
+    </head>
+    <body>
+		<header>
+		<h1> Texan Cougarways Library Branch </h1>
+        <nav id = "navbar">
+          <ul id = "navbar-list">
+            <li class = "navli"> <a href = "AboutUS.html"> About Us </a></li>
+			<li class = "navli"> <a href = "#"> User Login </a></li>
+			<li class = "navli"> <a href = "Library_Events.html"> Library Events </a></li>
+			<li class = "navli"> <a href = "Request_StudyRoom.html"> Request Study Room </a></li>
+			<li class = "navli"> <a href = "Request_Item.html"> Request Item </a></li>
+			<li class = "navli"> <a href = "Library_Catalog.html"> Library Catalog </a></li>
+			<li class = "navli"> <a href = "Texan Cougarways.html"> Home </a></li>
+          </ul>
+        </nav>
+		</header>
+		<main>
+		<div class = "video-panel">
+			<div class = "video-wrapper">
+				<div class = "controls">
+					<div class="left-slideshow-button" onclick="plusDivs(-1)"> &#10094; </div> <!-- &#10094; and &#10095; are langle and rangle characters -->
+					<div class="right-slideshow-button" onclick="plusDivs(1)"> &#10095; </div>
+				</div>
+				<!-- Attach all video events here. -->
+				<video class = "mySlides" autoplay muted>
+				  <source src="Images/Banners/We Love Gas Prices 2.mp4" type="video/mp4">
+				</video>
+				<video class = "mySlides" autoplay muted>
+				  <source src="Images/Banners/Smith Will Slap You.mp4" type="video/mp4">
+				</video>
+				<video class = "mySlides" autoplay muted>
+				  <source src="Images/Banners/Friends of Texan Cougarways Meeting.mp4" type="video/mp4">
+				</video>
+				<video class = "mySlides" autoplay muted>
+				  <source src="Images/Banners/Learn to Be a Texan.mp4" type="video/mp4">
+				</video>
+				<!-- //////////////// -->
+			</div>
+		</div>
+		<style>
+			.mySlides {display:none;}
+		</style>
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+		</main>
+		<footer>
+			<p id = "copyrightinfo"> © 2021-2022 Houston Team 16 </p>
+		</footer>
+		</body>
+	</html>
