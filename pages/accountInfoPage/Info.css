@@ -1,0 +1,70 @@
+body 
+{
+    font-family: "Geneva", sans-serif;
+    background-image: url("backgroundblur.jpg");
+}
+#main 
+{
+    color:black;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.sidenav 
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(190, -0, 42);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white; 
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#profileinfo
+{
+    padding-top: 2vw;
+    display:block;
+    text-align: center;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 25px; 
+    border: 12px solid rgb(190, -0, 42); 
+    padding: 5px;
+
+}
+#profileinfo table
+{
+    margin: 0 auto;
+    gap: 30px;
+    display:table;
+    text-align: center;
+    border-spacing: 5vh;
+}
