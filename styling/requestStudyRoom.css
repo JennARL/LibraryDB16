@@ -1,0 +1,171 @@
+/*
+    Created by: Kenneth Dang
+        
+        Edited by: Jenn Landicho
+            Details: Updated Page styling     
+        Date Modified: 2022_04_17 by Jenn Landicho
+            Modification Details: Added and refined a few styling choices. Previous format was not working with the table scroll function.
+*/
+
+body {
+	margin: 0px;
+	overflow-x: hidden;
+	color: white;
+}
+header {
+	background-color: #141414;
+	width: 100vw;
+	padding-bottom: 0px;
+	padding-top: 3px;
+	display: flex;
+}
+main {
+	background-image: url("../images/backgroundblur.jpg");
+	background-size: cover;
+	height: 100%;
+	display: block;
+	align-items: center;
+}
+h1 
+{
+	width: 40%;
+	margin: 0px;
+	padding-left: 20px;
+}
+#navbar 
+{
+	width: 60%;
+}
+#navbar-list 
+{
+	list-style-type: none;
+	overflow-x: hidden;
+	padding: 0px;
+	margin-right: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.navli {
+	float: right;
+}
+.navli a {
+	display: block;
+	text-align: center;
+	padding: 14px 25px;
+	color: white;
+	text-decoration: none;
+}
+.navli a:hover {
+	color: #5E5E5E;
+}
+.navli::after {
+	content: "";
+	display: block;
+	transition: transform 0.4s;
+	width: 100%;
+	height: 2px;
+	background-color: #4E4E4E;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+}
+.navli:hover::after {
+	background-color: #4E4E4E;
+	color: #4E4E4E;
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+#addRoom
+{
+    line-height: 1px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 75vw;
+    height: 5%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+    color: white;
+    background-color: rgb(190, -0, 42);
+
+
+    border-radius: 25px;
+    border: 2px solid medium;
+    padding: 20px; 
+}
+
+
+#myInput
+{
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 75vw;
+    height: 5%;
+    margin: 0 auto;
+
+    border-radius: 25px;
+    border: 2px solid maroon;
+    padding: 20px; 
+}
+
+.displaysearch
+{
+    height: 70vh;
+}
+.searchtable
+{
+    font-family: Geneva;
+    font-size: 14;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    height: 80vh;
+    width: 75vw;
+    
+    background-color: white;
+
+    border-radius: 25px;
+    border: 2px solid maroon;
+    padding: 20px; 
+}
+.searchtable thead{
+    flex: 0 0 auto;
+    width: calc(100% - 0.9em);
+}
+.searchtable tbody 
+{
+    height: 70vh;
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: scroll;
+}
+.searchtable tbody tr
+{
+    width: 100%;
+}
+.searchtable  thead, 
+.searchtable tbody tr
+{
+    display: table;
+    table-layout: fixed;
+}
+th 
+{
+    color: white;
+    background: rgb(190, -0, 42);
+}
+footer {
+	background-color: #141414;
+	margin: 0px;
+}
+#copyrightinfo {
+	margin: 0px;
+}
+tr:nth-child(even)
+{
+    background-color: #f2f2f2
+}
+
