@@ -7,15 +7,15 @@ The logins:
 
 Admin Login
   Username: admin
-  Password: 1234
+  Password: admin
   
 User Login
   Username: user 
-  Password: 1234
+  Password: user
   
   
   
-The web app should work just like regular library, 
+The web app should work just like a regular library, 
 
 
 Logging in as a User will allow you to check books, items, and study rooms in and out. Users can view any fines, books checked out, and items checked 
