@@ -27,12 +27,14 @@ items, study rooms. The admin account page will work the same as the user page b
 reports over library data. 
 
 
-The triggers we have implemented are tr_fines, tr_fine_alert, tr_fines_item, tr_fine_alertitem, tr_trans. 
+The triggers we have implemented are book_checked_out_trigger, item_checked_out_trigger, book_fines, 	and item_fines. 
 
-tr_fines and tr_fines_item should calculate the fines for a user for everyday that their item/book is late.
+book_checked_out_trigger will increase or decrease the number of booksCheckedOut based on if a user is checking them out or returning them.
 
-tr_fine_alert and tr_fine_alertitem should alert the user that they have a new fine on their account.
+item_checked_out_trigger will increase or decrease the number of itemsCheckedOut based on if a user is checking them out or returning them.
 
-tr_trans should add book and checkout information to the book transaction log.
+book_fines will increase the fine if a user has checked in the book later than 7 days after check out.
+
+item_fines will increase the fine if a user has checked in the item later than 7 days after check out.
 
 
